@@ -1,73 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <title>Ahmad Taufiq</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- End Bootstrap -->
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My Portfolio | Ahmad Taufiq</title>
   </head>
-  <body>
-    <div class="header">
-      <div class="header-logo">Ahmad Taufiq</div>
-      <div class="header-list">
-        <ul>
-          <li><a href="#about-link">Tentang Saya</a></li>
-          <li><a href="#work-link">Proyek Contoh</a></li>
-          <li><a href="#contact-link">Hubungi Saya</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="main">
-      <div class="copy-container">
-        <h1>Ahmad Taufiq<span>.</span></h1>
-        <h2>MY PORTFOLIO</h2>
-        <img src="images/Ninja Ken.png" alt="Ninja Ken" />
-      </div>
-
-      <div class="about">
-        <h3><a id="about-link">Tentang Saya</a></h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-
-      <div class="contents">
-        <h3><a id="work-link">Proyek Contoh</a></h3>
-        <div class="contents-item">
-          <img src="images/1.png" />
-          <p>Image 1</p>
-        </div>
-        <div class="contents-item">
-          <img src="images/2.png" />
-          <p>Image 2</p>
-        </div>
-        <div class="contents-item">
-          <img src="images/3.png" />
-          <p>Image 3</p>
+  <body id="home">
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ahmad Taufiq</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <!-- End Navbar -->
 
-      <div class="contact-form">
-        <h3 class="contact-title"><a id="contact-link">Hubungi Saya</a></h3>
-        <input placeholder="Email (Diperlukan)" />
-        <br />
-        <textarea placeholder="Message (Diperlukan)"></textarea>
-        <br />
-        <input class="contact-submit" type="submit" value="Kirim" />
-        <p>* Required fields must be filled</p>
-      </div>
-    </div>
+    <!-- Start Jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="img/ahmadtaufiq.jpg" alt="Ahmad Taufiq" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="dis">Ahmad Taufiq</h1>
+      <p class="lead">Data Analyst | Programmer</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,0L48,16C96,32,192,64,288,106.7C384,149,480,203,576,197.3C672,192,768,128,864,128C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End Jumbotron -->
 
-    <div class="footer">
-      <div class="footer-logo">Ahmad Taufiq</div>
-      <div class="footer-list">
-        <ul>
-          <li><a href="#about-link">Tentang Saya</a></li>
-          <li><a href="#work-link">Proyek Contoh</a></li>
-          <li><a href="#contact-link">Hubungi Saya</a></li>
-        </ul>
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tenetur nesciunt quia, et modi voluptatum dolorum doloremque? Iure, repudiandae porro.</p>
+          </div>
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quae laboriosam dolorum, facilis inventore totam, pariatur, voluptatibus nostrum exercitationem minima a eos corrupti! Enim, atque?</p>
+          </div>
+        </div>
       </div>
-    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,192L34.3,197.3C68.6,203,137,213,206,213.3C274.3,213,343,203,411,170.7C480,139,549,85,617,85.3C685.7,85,754,139,823,138.7C891.4,139,960,85,1029,96C1097.1,107,1166,181,1234,213.3C1302.9,245,1371,235,1406,229.3L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End About -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/projects/1.jpg" class="card-img-top" alt="Projects " />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/projects/2.jpg" class="card-img-top" alt="Projects 2" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/projects/3.jpg" class="card-img-top" alt="Projects 3" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/projects/4.jpg" cass="card-img-top" alt="Projects 4" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/projects/1.jpg" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,32L34.3,37.3C68.6,43,137,53,206,58.7C274.3,64,343,64,411,101.3C480,139,549,213,617,218.7C685.7,224,754,160,823,154.7C891.4,149,960,203,1029,202.7C1097.1,203,1166,149,1234,122.7C1302.9,96,1371,96,1406,96L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End Projects -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row tex justify-content-center">
+          <div class="col-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="email" class="form-control" id="name" aria-describedby="name" />
+              </div>
+            <form>
+              <div class="mb-3">
+                <label for="email class="form-label">Email</label>
+                <input type="email" class="form-control" id="email aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,282.7C384,277,480,267,576,272C672,277,768,299,864,272C960,245,1056,171,1152,154.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>    
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+<footer class="bg-primary text-white text-center pb-3">
+    <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://web.facebook.com/ataufiq32/" class="text-white fw-bold">ahmad Taufiq</a></p>
+</footer>
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
